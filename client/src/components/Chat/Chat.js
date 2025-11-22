@@ -18,7 +18,7 @@ const Chat = ({ location }) => {
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'http://localhost:5001';
+    const ENDPOINT = process.env.REACT_APP_SERVER_URL;
     
     
     
